@@ -1,3 +1,3 @@
 # Zap0
 
-Zap0 is a low-level programming language
+Zap0 (Zap Zero) is a low-level programming language made by me
