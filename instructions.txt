@@ -16,7 +16,10 @@ madd(3#a0, 1#b5, 2#c1) - Adds value of register 3#a0 and 1#b5 together and store
 msub(3#a0, 1#b5, 2#c1) - Subtracts value of register 3#a0 from 1#b5 eachother and stores them in register 2#c1
 mjv(3#a0, 0x36, 3#a1) - If register 3#a0 equals to 0x36 (00110110) move register 3#a0 to 3#a1
 mjr(3#a0, 1#b5, 3#a1) - If register 3#a0 holds the same value as register 1#b5 move register 3#a0 to 3#a1
-msk(3#a0, 1#b5, 2#c1, 5#a3) - Stacks register 3#a0, 1#b5, 2#c1, 5#a3 on top of eachother (bottom=reg[3#a0], top=reg[5#a3)
+msk(0x3F, 3#a0, 1#b5, 2#c1, 5#a3) - Stacks register 3#a0, 1#b5, 2#c1, 5#a3 on top of eachother (bottom=reg[3#a0], top=reg[5#a3), you call the name of the stack
+mps(0x3F, 2#c2) - Stacks register 2#c2 on top of stack 0x3F 
+mgt(0x3F, 2#c2) - Gets 2#c2 out of the stack 0x3F and returns it to its previous memory place
+msg(0x3F) - Gets all the values of the stack called 0x3F
 ------------
 #C
 cmpr(3#a0, 1#b5) - Compares register 3#a0 with 1#b5 (both the same value, output = 1 | both diffrent from eachother, output = 0)
