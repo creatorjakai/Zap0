@@ -11,7 +11,8 @@ mlr(3#a0) - Loads memory register 3#a0
 mst(3#a0, 0x36) - Store 0x36 in register 3#a0 of memory
 mrd(3#a0) - Reads register 3#a0 of memory
 mmv(3#a0, 1#b5) - Moves register 3#a0 to register 1#b5
-mcl(3#a0) - Clears register 3#a0
+mcl(3#a0) - Clears the value of register 3#a0
+mul(3#a0) - Unloads register 3#a0
 madd(3#a0, 1#b5, 2#c1) - Adds value of register 3#a0 and 1#b5 together and stores them in register 2#c1
 msub(3#a0, 1#b5, 2#c1) - Subtracts value of register 3#a0 from 1#b5 eachother and stores them in register 2#c1
 mjv(3#a0, 0x36, 3#a1) - If register 3#a0 equals to 0x36 (00110110) move register 3#a0 to 3#a1
